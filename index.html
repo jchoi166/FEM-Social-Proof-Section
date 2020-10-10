@@ -24,48 +24,76 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Spartan:400,500,700">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet"> -->
   </head>
   <body>
 
-    <section class="header">
-      <div class="header__message"></div>
-      <div class="header__review"></div>
-    </section>
-    <section class="cardContainer">
-      <div class="card"></div>
-      <div class="card"></div>
-      <div class="card"></div>
-    </section>
-    10,000+ of our users love our products.
+    <section class="social-proof">
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
-    
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+      <div class="header">
+        <div class="header__message">
+          <p class="header__title">10,000+ of our users love our products.</p>
+          <p class="header__caption">
+            We only provide great products combined with excellent customer service.
+            See what our satisfied customers are saying about our services.
+          </p>
+        </div>
+        <div class="header__review-container">
+          <div class="rating-block">
+            <img src="/images/icon-star.svg" alt="" class="rating-block__star">
+            <img src="/images/icon-star.svg" alt="" class="rating-block__star">
+            <img src="/images/icon-star.svg" alt="" class="rating-block__star">
+            <img src="/images/icon-star.svg" alt="" class="rating-block__star">
+            <img src="/images/icon-star.svg" alt="" class="rating-block__star">
+            <div class="rating-block__caption">
+              Rated 5 Stars in Reviews
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="cardContainer">
+        <div class="card">
+          <div class="card__header">
+            Colton Smith 
+            Verified Buyer
+          </div>
+          <div class="card__content">
+            "We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            Irene Roberts 
+            Verified Buyer
+          </div>
+          <div class="card__content">
+            "Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."
+          </div>
+        </div>
+        <div class="card">
+          <div class="card__header">
+            Anne Wallace 
+            Verified Buyer
+          </div>
+          <div class="card__content">
+            "Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"
+          </div>
+        </div>
+      </div>
+
+    </section>
 
     <div class="attribution">
       Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by <a href="#">Your Name Here</a>.
     </div>
+
   </body>
 </html>

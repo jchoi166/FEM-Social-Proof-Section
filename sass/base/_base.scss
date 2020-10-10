@@ -1,0 +1,21 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit; /*Better practice to have box sizing here and declare it in the body in case we want to change box sizing properties in any plugins or components, etc.*/
+}
+
+html {
+    font-size: 62.5%; /*Default font size is 16 px. We set font size to 62.5% because we want our default size to be 10px for the rem measurements we specified below. REM is a unit based on default font size which makes responsive design much easier, as we only need to change the font size to scale everything larger or smaller. */
+    height: 100%;
+}
+
+body {
+    box-sizing: border-box;
+    height: 100%; 
+    position: relative;
+    // background-color: lightblue;
+    // background-image: url("/images/bg-pattern-bottom-desktop.svg");
+    // background-size: cover;
+}

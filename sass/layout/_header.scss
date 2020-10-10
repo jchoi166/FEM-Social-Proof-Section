@@ -1,0 +1,18 @@
+.header {
+    display: flex;
+    height: 50%;
+    margin-bottom: 7rem;
+
+    &__message {
+        width: 50%;
+        padding-right: 15rem;
+    }
+
+    &__title {
+       margin-bottom: 1.5rem;
+    }
+
+    &__caption {
+        
+    }
+}
