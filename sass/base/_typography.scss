@@ -15,10 +15,26 @@ html {
         color: hsl(303, 10%, 53%);
         line-height: 2.5rem;
         font-size: 1.4rem;
+        font-weight: 500;
     }
 }
 
 .rating-block {
     font-weight: 700;
     color: hsl(300, 43%, 22%);
+}
+
+.card {
+    color: hsl(0, 0%, 100%);
+    font-size: 1.2rem;
+    line-height: 2.1rem;
+    
+    &__header {
+        font-size: 1.4rem;
+        font-weight: 500; 
+    }
+    span {
+        color: hsl(333, 80%, 67%);
+    }
+
 }
