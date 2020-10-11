@@ -1,0 +1,86 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+  /*Better practice to have box sizing here and declare it in the body in case we want to change box sizing properties in any plugins or components, etc.*/ }
+
+html {
+  font-size: 62.5%;
+  /*Default font size is 16 px. We set font size to 62.5% because we want our default size to be 10px for the rem measurements we specified below. REM is a unit based on default font size which makes responsive design much easier, as we only need to change the font size to scale everything larger or smaller. */
+  height: 100%; }
+
+body {
+  box-sizing: border-box;
+  height: 100%;
+  position: relative; }
+
+html {
+  font-family: 'Spartan'; }
+
+.header {
+  font-size: 1.5rem; }
+  .header__title {
+    font-weight: 700;
+    font-size: 4.5rem;
+    color: #502050; }
+  .header__caption {
+    color: #937b92;
+    line-height: 2.5rem;
+    font-size: 1.4rem; }
+
+.rating-block {
+  font-weight: 700;
+  color: #502050; }
+
+.social-proof {
+  background-image: url("/images/bg-pattern-bottom-desktop.svg");
+  background-color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  padding: 8rem 13rem;
+  box-shadow: 10px 15px 30px #c9c9c9; }
+
+.header {
+  display: flex;
+  height: 50%;
+  margin-bottom: 6rem; }
+  .header__message {
+    width: 50%; }
+  .header__title {
+    padding-right: 10rem;
+    margin-bottom: 1.5rem; }
+  .header__caption {
+    padding-right: 11rem; }
+  .header__rating-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 3rem; }
+
+.rating-block {
+  display: flex;
+  background-color: #f7f2f7;
+  height: 5.3rem;
+  width: 80%;
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.3rem; }
+  .rating-block__star-cont {
+    margin-left: 1rem; }
+  .rating-block__star {
+    margin: 0 .3rem; }
+  .rating-block__caption {
+    margin-left: 3rem; }
+
+.rating-block--1 {
+  transform: translateX(-8rem); }
+
+.rating-block--2 {
+  transform: translateX(-4rem); }
