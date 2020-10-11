@@ -23,15 +23,20 @@ html {
   font-size: 1.5rem; }
   .header__title {
     font-weight: 700;
-    font-size: 4rem;
+    font-size: 4.5rem;
     color: #502050; }
   .header__caption {
-    color: #937b92; }
+    color: #937b92;
+    line-height: 2.5rem;
+    font-size: 1.4rem; }
+
+.rating-block {
+  font-weight: 700;
+  color: #502050; }
 
 .social-proof {
   background-image: url("/images/bg-pattern-bottom-desktop.svg");
   background-color: white;
-  height: 80%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -43,9 +48,39 @@ html {
 .header {
   display: flex;
   height: 50%;
-  margin-bottom: 7rem; }
+  margin-bottom: 6rem; }
   .header__message {
-    width: 50%;
-    padding-right: 15rem; }
+    width: 50%; }
   .header__title {
+    padding-right: 10rem;
     margin-bottom: 1.5rem; }
+  .header__caption {
+    padding-right: 11rem; }
+  .header__rating-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-bottom: 3rem; }
+
+.rating-block {
+  display: flex;
+  background-color: #f7f2f7;
+  height: 5.3rem;
+  width: 80%;
+  margin: 1rem;
+  padding: 2rem;
+  font-size: 1.3rem; }
+  .rating-block__star-cont {
+    margin-left: 1rem; }
+  .rating-block__star {
+    margin: 0 .3rem; }
+  .rating-block__caption {
+    margin-left: 3rem; }
+
+.rating-block--1 {
+  transform: translateX(-8rem); }
+
+.rating-block--2 {
+  transform: translateX(-4rem); }
