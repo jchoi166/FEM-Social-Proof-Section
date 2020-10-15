@@ -6,6 +6,10 @@
     flex-wrap: wrap;
     padding: 3.5rem;
 
+    @include respond(phone){
+        margin: .7rem 3rem;
+    }
+
     span{
         display: block;
     }
@@ -23,4 +27,18 @@
         padding-top: .5rem;
     }
 
+    
+    
+}
+
+.card--1 {
+    @include respond(tab-land){
+        transform: translateY(-1.5rem);
+    }
+}
+
+.card--3 {
+    @include respond(tab-land){
+        transform: translateY(1.5rem);
+    }
 }

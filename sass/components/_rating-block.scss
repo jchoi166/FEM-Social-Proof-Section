@@ -4,45 +4,51 @@
     height: 5.3rem;
     width: 80%;
     margin: 1rem;
-    padding: 2rem;
+    padding: 2.1rem;
     font-size: 1.3rem;
-    // flex: 2;
-    // justify-content: space-between;
-    // flex-direction: column;
-    // width: 100%;
+
+    @include respond(phone){
+        display: block;
+        height: auto;
+        width: 100%;
+        padding: 1rem;
+    }
 
     &__star-cont {
-        // display: flex;
-        // justify-content: center;
-        // padding: 1rem;
-        margin-left: 1rem;
-        // line-height: 5rem;
-        // vertical-align: middle;
+        margin: 0 0 0 1rem;
+
+        @include respond(phone){
+            margin: .5rem;
+        }
     }
 
     &__star {
         margin: 0 .3rem;
-        // padding-bottom: 1rem;
-        // transform: translateY(-10%);
     }
 
     &__caption {
-        // margin: 0 4rem;
-        margin-left: 3rem;
-        // padding: 1rem;
-        // line-height: 5rem;
-        // vertical-align: middle;
+        margin: 0 0 0 3rem;
+
+        @include respond(phone){
+            margin: 1rem 0 .5rem 0;
+        }
     }
 
 }
 
 .rating-block--1 {
     transform: translateX(-8rem);
+
+    @include respond(phone){
+        transform: translateX(0);       
+    }
 }
 .rating-block--2 {
     transform: translateX(-4rem);
-}
-.rating-block--3 {
 
+    @include respond(phone){
+        transform: translateX(0);
+    }
 }
+
 
