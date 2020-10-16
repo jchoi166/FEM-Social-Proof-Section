@@ -1,3 +1,7 @@
+// @mixin test {
+//     background-color: red;;
+// }
+
 .social-proof {
     background-image: url("/images/bg-pattern-bottom-desktop.svg");
     background-color: white;
@@ -7,6 +11,16 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
+    // height: 90%;
     padding: 8rem 13rem;
     box-shadow: 10px 15px 30px #c9c9c9;
+
+    @include respond(phone) {
+        width: 100%;
+        padding: 0;
+        top: 0;
+        left: 0;
+        transform: translate(0,0);
+    }
+    
 }

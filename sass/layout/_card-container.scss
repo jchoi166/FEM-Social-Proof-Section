@@ -1,0 +1,18 @@
+.card-container {
+    display: flex;
+    
+    @include respond(tab-land) {
+        > :first-child {
+            margin-left: 0;
+        }
+
+        > :last-child {
+            margin-right: 0; 
+        }
+    }
+    
+
+    @include respond(phone) {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,44 @@
+.card {
+    background-color: hsl(300, 43%, 22%);
+    margin: 0 1.2rem;
+    border-radius: .5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.5rem;
+
+    @include respond(phone){
+        margin: .7rem 3rem;
+    }
+
+    span{
+        display: block;
+    }
+    img {
+        border-radius: 50%;
+        height: 5rem;
+        margin-right: 2.5rem;
+    }
+
+    &__content {
+        margin: 3rem 0 .8rem 0;
+    }
+
+    &__header {
+        padding-top: .5rem;
+    }
+
+    
+    
+}
+
+.card--1 {
+    @include respond(tab-land){
+        transform: translateY(-1.5rem);
+    }
+}
+
+.card--3 {
+    @include respond(tab-land){
+        transform: translateY(1.5rem);
+    }
+}
